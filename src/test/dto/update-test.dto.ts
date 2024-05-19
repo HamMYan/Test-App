@@ -1,0 +1,7 @@
+import { ApiProperty, PartialType } from '@nestjs/swagger';
+import { CreateTestDto } from './create-test.dto';
+
+export class UpdateTestDto extends PartialType(CreateTestDto) {
+    @ApiProperty()
+    name: string
+}
